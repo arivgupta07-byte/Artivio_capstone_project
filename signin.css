@@ -1,0 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+/* Center box */
+.signin-container {
+    width: 350px;
+    margin: 60px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.signin-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-size: 0.9rem;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e6494e;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c7373c;
+}
+
+/* Notes */
+.note {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.forgot {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #007185;
+    text-decoration: none;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* Create Account button */
+.create-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.create-btn:hover {
+    background-color: #ccc;
+}
+
+/* <> */
+.logo {
+    color: white;
+    text-decoration: none;
+}
+.navbar a {
+    /* color: white; */
+    text-decoration: none;
+}
+/* <> */

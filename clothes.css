@@ -196,11 +196,28 @@ span{
 
 }
 
+/* <> */
+.navbar>.nav-signin  a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* <> */
+
 a{
     text-decoration: none;
     color: black;
     
 }
+/* <> */
+.panel>.panel-ops>a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+
+}
+/* <> */
 
 
 
@@ -256,3 +273,20 @@ ul a {
 
 
 
+/* test */
+
+.panel>.panel-ops>a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+
+
+/* <> */
+.navbar>.nav-webname>.webname a{
+    color: white;
+}
+/* <> */

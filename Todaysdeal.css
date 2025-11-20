@@ -196,28 +196,12 @@ span{
 
 
 }
-/* <> */
-.navbar>.nav-signin  a{
-    text-decoration: none;
-    color: white;
-    
-}
-/* <> */
 
 a{
     text-decoration: none;
     color: black;
     
 }
-/* <> */
-.panel>.panel-ops>a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-
-
-}
-/* <> */
 
 
 
@@ -269,11 +253,30 @@ ul a {
 
 }
 
+.deal-heading {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+.deal-heading h2 {
+    font-size: 2rem;
+}
+
+.deal-heading p {
+    color: #555;
+    margin-top: 5px;
+}
+
+/* DEALS GRID */
+.deals-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
 /* test */
-
-
-
 
 
 /* <> */
@@ -281,3 +284,4 @@ ul a {
     color: white;
 }
 /* <> */
+

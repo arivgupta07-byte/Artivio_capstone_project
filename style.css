@@ -246,6 +246,23 @@ span{
 
 
 }
+/* <> */
+.navbar>.nav-signin  a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* <> */
+.panel>.panel-ops>a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+
+}
+/* <> */
+
+
 
 a{
     text-decoration: none;
@@ -297,6 +314,13 @@ ul a {
 
 
 }
+
+
+/* <> */
+.navbar>.nav-webname>.webname a{
+    color: white;
+}
+/* <> */
 
 
 
