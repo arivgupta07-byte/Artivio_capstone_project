@@ -60,6 +60,19 @@ cartBtn.addEventListener("click", function () {
     console.log("Cart button clicked");
 });
 
+//  <>
+let ac= document.querySelector(".cart");
+ac.addEventListener("click",function(){
+    if(ac.innerText=="Add to Cart"){
+        ac.innerText="Added to Cart";
+        ac.style.backgroundColor = "#f7ca00";
+
+    }
+    else if (ac.innerText=="Added to Cart"){
+        ac.innerText="Add to Cart";
+        ac.style.backgroundColor = "#ffd814";
+    }
+})
 // <>
 
 // <>
