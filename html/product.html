@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,16 @@
 
 <body>
 
-    
+
     <header>
         <div class="navbar">
             <div class="nav-webname border">
                 <div class="webname">
-                    <a href="index.html"><h1>Artivio</h1></a>
+                    <a href="index.html">
+                        <h1>Artivio</h1>
+                    </a>
                 </div>
-                
+
             </div>
             <div class="nav-address border">
                 <p class="add-first">Deliver to</p>
@@ -40,8 +43,10 @@
                 </div>
             </div>
             <div class="nav-signin border">
-                <a href="Signin.html"><p><span>Hello, sign in</span></p>
-                <p class="nav-second">Account & Lists</p></a>
+                <a href="Signin.html">
+                    <p><span>Hello, sign in</span></p>
+                    <p class="nav-second">Account & Lists</p>
+                </a>
             </div>
             <div class="nav-returns border">
                 <p><span>Returns</span></p>
@@ -64,36 +69,46 @@
 
                 <p>Favourites</p>
                 <p>Registry</p>
-                <a href="Todaysdeal.html"><p>Today's Deals</p></a>
+                <a href="Todaysdeal.html">
+                    <p>Today's Deals</p>
+                </a>
 
 
             </div>
         </div>
     </header>
 
-    
+
     <div class="product-container">
 
-        
+
         <div class="product-image">
-            <img src="../img/td_img_2.png"
-                 alt="Product Image">
+            <img src="../img/td_img_2.png" alt="Product Image">
         </div>
 
-        
+
         <div class="product-details">
 
-            <h2>Xbox Wireless Gaming Controller (2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV Sticks, Smart TVs, VR Headsets</h2>
+            <h2>Xbox Wireless Gaming Controller (2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV
+                Sticks, Smart TVs, VR Headsets</h2>
 
             <p class="price">₹1,499 <span>₹2,499</span></p>
+            <button id="minus" style="width:18px;">-</button>
+            <span id="qty">1</span>
+            <button id="plus" style="width:18px;">+</button>
+            <p> Total: ₹<span id="total" style="font-size: 15px;">1499</span></p>
 
-           
+
 
             <ul class="features">
-                <li>XBOX WIRELESS CONTROLLER: Experience the modernized design of the Xbox Wireless Controller, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay with battery life up to 40 hours*.</li>
-                <li>COMPATIBILITY: Plug in any compatible headset with the 3.5mm audio headset jack. Connect using the USB-C port for direct plug and play to console or PC*.</li>
+                <li>XBOX WIRELESS CONTROLLER: Experience the modernized design of the Xbox Wireless Controller,
+                    featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay with battery
+                    life up to 40 hours*.</li>
+                <li>COMPATIBILITY: Plug in any compatible headset with the 3.5mm audio headset jack. Connect using the
+                    USB-C port for direct plug and play to console or PC*.</li>
                 <li>STAY ON TARGET: New hybrid D-pad and textured grip on the triggers, bumpers, and back-case./li>
-                <li>CUSTOM BUTTON MAPPING: Make the controller your own by customizing button mappings with the Xbox Accessories app*.</li>
+                <li>CUSTOM BUTTON MAPPING: Make the controller your own by customizing button mappings with the Xbox
+                    Accessories app*.</li>
             </ul>
 
             <button class="btn cart">Add to Cart</button>
@@ -147,7 +162,62 @@
         </div>
     </footer>
 
+    <!-- <script src="../js/main.js"></script> -->
+     <script>
+        let s =document.querySelector("#qty");
+        let r =document.querySelector("#total");
+        let q=1;
+        let p = Number(document.getElementById("total").innerText);
+
+        document.querySelector("#minus").addEventListener("click",function (){
+            if (Number(s.innerText)>1){
+
+                s.innerText=Number(s.innerText) -1;
+                r.innerText=p*(Number(s.innerText));
+            }
+
+            
+            
+
+
+
+        })
+        document.querySelector("#plus").addEventListener("click",function (){
+            s.innerText=Number(s.innerText) + 1;
+            r.innerText=p*(Number(s.innerText));
+
+
+
+
+        })
+        // document.querySelector("#plus").addEventListener("click",function (){
+        //     r.innerText=Number(r.innerText)*(Number(s.innerText));
+
+
+
+
+        // })
+        // document.querySelector("#minus").addEventListener("click",function (){
+        //     r.innerText=Number(r.innerText)/(Number(s.innerText));
+
+
+
+
+        // })
+    
+
+
+    </script>
+    <script src="../js/main.js"></script>
+    
+
 
 
 </body>
+
 </html>
+
+
+
+
+

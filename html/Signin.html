@@ -18,16 +18,17 @@
     </header>
 
     <div class="signin-container">
-        <h2>Sign In</h2>
+        <h2>Sign Up</h2>
 
         <form action="index.html">  
             <label>Email or Phone</label>
-            <input type="text" required>
+            <input type="text" id="email" required>
+            <p id="emailError" style="color: red;"></p>
 
             <label>Password</label>
             <input type="password" required>
 
-            <button type="submit" class="btn">Sign In</button>
+            <button type="submit" class="btn">Sign Up</button>
 
             <p class="note">By continuing, you agree to our Terms & Conditions.</p>
 
@@ -40,6 +41,23 @@
 
         <a href="#" class="create-btn">Create New Account</a>
     </div>
+    <script>
+        let inpuT= document.getElementById("email");
+        let PTag= document.getElementById("emailError");
+        inpuT.addEventListener("input",function(){
+            if(inpuT.value.includes("@")){
+                PTag.textContent="";
+            } else{ 
+                PTag.textContent="Invalid Email";  
+
+            }
+            if(inpuT.value===""){
+                PTag.textContent="";
+
+
+            }
+        })
+    </script>
 
 </body>
 
