@@ -29,20 +29,7 @@ let s =document.querySelector("#qty");
 
 
         })
-        // document.querySelector("#plus").addEventListener("click",function (){
-        //     r.innerText=Number(r.innerText)*(Number(s.innerText));
-
-
-
-
-        // })
-        // document.querySelector("#minus").addEventListener("click",function (){
-        //     r.innerText=Number(r.innerText)/(Number(s.innerText));
-
-
-
-
-        // })
+        
     
 
 
